@@ -1,0 +1,33 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+</head>
+<body>
+    <input id="btnCounter" type="button" onclick="initCounter()" value="Iniciar" />
+    <p id="counter">0</p>
+    <script>
+        var i = 0;
+        var ligado = false;
+        var timer;
+
+        function counter() {
+            i = i+1;
+            document.getElementById('counter').innerHTML = i;
+        }
+
+        function initCounter() {
+            if(!ligado){
+                timer = setInterval(counter, 1000);
+                ligado = true;
+                document.getElementById('btnCounter').innerHTML = "Parar";
+            } else {
+                clearInterval(timer);
+                ligado = false;
+                document.getElementById('btnCounter').innerHTML = "Iniciar";
+            }
+        }
+    </script>
+</body>
+</html>

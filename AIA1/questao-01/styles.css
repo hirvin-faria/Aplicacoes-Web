@@ -1,0 +1,23 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+input:invalid+span:after {
+    content: 'O Valor deve ser um Número';
+    color: #fc161e;
+    padding-left: 5px;
+}
+
+input:valid+span:after {
+    content: '✓';
+    color: #699e0d;
+    padding-left: 5px;
+}
