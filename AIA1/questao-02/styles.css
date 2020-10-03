@@ -13,7 +13,11 @@ main {
 }
 
 input {
-    margin: 16 16 0 8;
+    margin: 16px 16px 0px 8px;
+}
+
+button {
+    margin-top: 16px;
 }
 
 .title {
@@ -22,13 +26,20 @@ input {
     font-style: italic;
 }
 
-#media {
+.wrapper-media {
     width: 50%;
-    height: 100px;
     margin: 32px;
     padding: 16px;
     border: 1px solid #cccccc;
-    
+
     display: flex;
     justify-content: center;
+}
+
+.disapproved {
+    color: #fc0339;
+}
+
+.passad {
+    color: #0367fc;
 }

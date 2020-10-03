@@ -10,16 +10,20 @@
         <p class="title">Informe suas notas, que vamos te ajudar a calcular sua média na UVA ❤ : </p>
         <div>
             <label for="A1">Nota A1: </label>
-            <input id="A1" type="text" placeholder="Nota A1">
+            <input id="A1" type="number" placeholder="Nota A1">
 
-            <label for="A2">Nota A1: </label>
-            <input id="A2" type="text" placeholder="Nota A2">
+            <label for="A2">Nota A2: </label>
+            <input id="A2" type="number" placeholder="Nota A2">
 
-            <label for="A3">Nota A1: </label>
-            <input id="A3" type="text" placeholder="Nota A3">
+            <label for="A3">Nota A3: </label>
+            <input id="A3" type="number" placeholder="Nota A3">
         </div>
+        
+        <button onclick="getMedia()">calcular</button>
 
-        <div id="media">
+        <div class="wrapper-media">
+            <p>Média: </p>
+            <p id="media"></p>
         </div>
     </main>
     <script src="functions.js"></script>
